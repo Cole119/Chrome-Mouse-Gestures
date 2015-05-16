@@ -5,7 +5,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "css": [ "css/gestures.css" ],
-      "js": [ "js/content/gestures.js", "js/jquery.min.js" ],
+      "js": [ "js/content/painter.js", "js/content/listen.js", "js/jquery.min.js" ],
       "matches": [ "\u003Call_urls\u003E" ],
       "run_at": "document_start"
    } ],

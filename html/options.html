@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Options for Chrome Gestures</title>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../farbtastic/farbtastic.js"></script>
+    <link rel="stylesheet" href="../farbtastic/farbtastic.css" type="text/css" />
+</head>
+<body>
+    <form>Stroke color: <input type="text" id="stroke-color" name="color" value="#123456" /></form>
+    <div id="colorpicker"></div>
+    <div id="custom-gestures">
+        <table id="gestures-table" border="1">
+            <tr>
+                <th>Gesture</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        <button id="new-gesture">New</button>
+    </div>
+    <div id="status"></div>
+    <button id="save">Save</button>
+</body>
+
+<script src="../js/background/gesturemap.js"></script>
+<script src="../js/settings/options.js"></script>
+
+</html>

@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "js/background/gesturemap.js", "js/background/background.js", "js/jquery.min.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/gestures.css" ],
+      "js": [ "js/content/gestures.js", "js/jquery.min.js" ],
+      "matches": [ "\u003Call_urls\u003E" ],
+      "run_at": "document_start"
+   } ],
+   "description": "A simple extension for Chrome that adds mouse gestures to automate common tasks.",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6MkWuiuyKO16Uh3Tg85O+Q1lA2rDuWxV3+/3D1qeuBYfQf4lBm7/7TJLmQPaKzA30DtmbbKYgQ9jQRC7QY2phAIQhMJw2/Dk36keKoEwXzl6DrJSLX49+UfaiKEo/6cYBosazvxD0ae4TtlG3brn4zMoAW3WR+q+4YymH1YkW5uNwzV987Hpiv1dVxM7LeMKDa9U0hCpreddyBoY+h7ZJuXjv4smKgmj3owS3Sj5Ei4Y6dLJzV2yr6vaX2+JZ16PLap1HNF7FaCwNWwArUZ9FBp1Jt6S4Y8IgYTaJJHTWFZNgiTyOjG6Anvtng/os0fzhWBjA757c3nvdcNXaAbw/wIDAQAB",
+   "manifest_version": 2,
+   "name": "Chrome Gestures",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "\u003Call_urls\u003E", "clipboardRead", "clipboardWrite", "bookmarks", "notifications", "storage", "http://*/*", "https://*/*", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "version": "1.0"
+}

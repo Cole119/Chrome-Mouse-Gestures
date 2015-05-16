@@ -1,11 +1,11 @@
 {
    "background": {
-      "scripts": [ "js/background/gesturemap.js", "js/background/background.js", "js/jquery.min.js" ]
+      "scripts": [ "js/background/gesturemap.js", "js/background/background.js", "js/libraries/jquery.min.js" ]
    },
    "content_scripts": [ {
       "all_frames": true,
       "css": [ "css/gestures.css" ],
-      "js": [ "js/content/painter.js", "js/content/listen.js", "js/jquery.min.js" ],
+      "js": [ "js/content/painter.js", "js/content/listen.js", "js/libraries/jquery.min.js" ],
       "matches": [ "\u003Call_urls\u003E" ],
       "run_at": "document_start"
    } ],

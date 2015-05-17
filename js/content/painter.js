@@ -24,6 +24,7 @@ function Painter() {
         canvas.id = "gesture-canvas";
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        canvas.className = "no-inherit";
 
         return canvas;
     }
@@ -73,6 +74,7 @@ function Painter() {
         if (!document.getElementById("direction-container")) {
             directionContainer = document.createElement("div");
             directionContainer.id = "direction-container";
+            directionContainer.className = "no-inherit";
 
             directionGroupDiv = document.createElement("div");
             directionGroupDiv.id = "direction-group";

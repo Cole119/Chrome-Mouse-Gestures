@@ -1,4 +1,18 @@
-﻿#gesture-container {
+﻿.no-inherit {
+    display: block;
+    font: initial;
+    height: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: initial;
+    visibility: visible;
+    width: auto;
+    word-spacing: normal;
+}
+
+#gesture-container {
     position:fixed !important;
 	left:0px !important;
 	top:0px !important;
@@ -50,4 +64,5 @@ canvas#gesture-canvas {
 .direction-div {
     background-color: black;
     border: 5px solid black;
+    font-family: sans-serif;
 }

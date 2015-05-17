@@ -60,7 +60,7 @@ function Painter() {
 
             ctx = canvas.getContext('2d');
             ctx.strokeStyle = 'rgb(18,89,199)';
-            ctx.translate(0.5, 0.5);
+            //ctx.translate(0.5, 0.5);
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
             ctx.lineWidth = 3;

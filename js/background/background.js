@@ -82,7 +82,7 @@ function createNewTab(url) {
 
 function duplicateTab() {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        var current = tabs[0]
+        var current = tabs[0];
         chrome.tabs.duplicate(current.id);
     });
 }

@@ -1,6 +1,7 @@
 {
    "background": {
-      "scripts": [ "js/background/gesturemap.js", "js/background/background.js", "js/libraries/jquery.min.js" ]
+      "scripts": [ "js/background/gesturemap.js", "js/background/background.js", "js/libraries/jquery.min.js" ],
+      "persistent": false
    },
    "content_scripts": [ {
       "all_frames": true,
@@ -18,6 +19,6 @@
       "page": "html/options.html",
       "chrome_style": true
    },
-   "permissions": [ "tabs", "\u003Call_urls\u003E", "clipboardRead", "clipboardWrite", "bookmarks", "notifications", "storage", "http://*/*", "https://*/*", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "permissions": [ "tabs", "\u003Call_urls\u003E", "clipboardRead", "clipboardWrite", "bookmarks", "storage", "http://*/*", "https://*/*", "webNavigation" ],
    "version": "1.0"
 }

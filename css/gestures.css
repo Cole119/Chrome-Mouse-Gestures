@@ -58,7 +58,7 @@ canvas#gesture-canvas {
     position: absolute;
     color: white;
     opacity: 0.6;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .direction-div {

@@ -3,23 +3,29 @@
 <head>
     <title>Options for Chrome Gestures</title>
     <script src="../js/libraries/jquery.min.js"></script>
-    <script type="text/javascript" src="../farbtastic/farbtastic.js"></script>
-    <link rel="stylesheet" href="../farbtastic/farbtastic.css" type="text/css" />
+    <link rel="stylesheet" href="../css/options.css" type="text/css" />
 </head>
 <body>
-    <form>Stroke color: <input type="text" id="stroke-color" name="color" value="#123456" /></form>
-    <div id="colorpicker"></div>
+    <form>
+        <label for="stroke-color">Stroke color: </label>
+        <input type="color" id="stroke-color" name="color" value="#1259C7" />
+    </form>
     <div id="custom-gestures">
-        <table id="gestures-table" border="1">
-            <tr>
-                <th>Gesture</th>
-                <th>Action</th>
-            </tr>
+        <table id="gestures-table">
+            <thead id="gestures-table-head">
+                <tr>
+                    <th>Gesture</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="gestures-table-body">
+
+            </tbody>
         </table>
         <button id="new-gesture">New</button>
     </div>
     <div id="status"></div>
-    <button id="save">Save</button>
+    <button id="save" type="submit">Save</button>
 </body>
 
 <script src="../js/background/gesturemap.js"></script>

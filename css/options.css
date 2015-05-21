@@ -1,0 +1,38 @@
+table#gestures-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+    color: #777;
+    line-height: 1.6;
+}
+
+thead#gestures-table-head {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+tbody#gestures-table-body {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+table#gestures-table td, table#gestures-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+div {
+    margin: 1em;
+}

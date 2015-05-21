@@ -39,7 +39,10 @@ function save_options() {
 // Restores select box state to saved value from localStorage.
 function restore_options() {
     chrome.storage.sync.get(null, function (data) {
-        document.getElementById("stroke-color").value = data["color"];
+        var initialColor = data["color"];
+        if(initialColor && initialColor != "undefined") {
+            document.getElementById("stroke-color").value = initialColor;
+        }
         var gestures = data["gestures"];
         for (var gesture in gestures) {
             var tr = newGesture();
@@ -83,16 +86,10 @@ function newGesture() {
 
     tr.appendChild(td1);
     tr.appendChild(td2);
-    document.getElementById("gestures-table").appendChild(tr);
+    document.getElementById("gestures-table-body").appendChild(tr);
     return tr;
 }
 
 document.addEventListener('DOMContentLoaded', restore_options);
 document.querySelector('#save').addEventListener('click', save_options);
 document.querySelector("#new-gesture").addEventListener("click", newGesture);
-
-$(document).ready(function () {
-
-    $('#colorpicker').farbtastic('#color');
-
-});

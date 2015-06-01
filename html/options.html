@@ -1,11 +1,14 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-csp>
 <head>
     <title>Options for Chrome Gestures</title>
     <script src="../js/libraries/jquery.min.js"></script>
+    <script src="../js/libraries/angular.min.js"></script>
+    <script src="../js/background/gesturemap.js"></script>
+    <script src="../js/settings/options2.js"></script>
     <link rel="stylesheet" href="../css/options.css" type="text/css" />
 </head>
-<body>
+<body ng-app="gesturesApp" ng-controller="GestureController">
     <form>
         <label for="stroke-color">Stroke color: </label>
         <input type="color" id="stroke-color" name="color" value="#1259C7" />
@@ -19,16 +22,25 @@
                 </tr>
             </thead>
             <tbody id="gestures-table-body">
-
+                <tr ng-repeat="gesture in gestures">
+                    <!-- <td>
+                        <input type="text" ng-model="gesture.directions"></input>
+                    </td>
+                    <td>
+                        <select ng-model="gesture.action.readableString"  ng-options="action.description for action in gestures.actions">
+                            <option value="">-- choose an action --</option>
+                        </select>
+                    </td> -->
+                    <td>hello</td>
+                    <td>cole</td>
+                </tr>
             </tbody>
         </table>
-        <button id="new-gesture">New</button>
+        <button id="new-gesture" new-gesture-button>New</button>
+        <div>count: {{count}}</div>
     </div>
     <div id="status"></div>
     <button id="save" type="submit">Save</button>
 </body>
-
-<script src="../js/background/gesturemap.js"></script>
-<script src="../js/settings/options.js"></script>
 
 </html>
